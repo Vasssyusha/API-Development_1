@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-n*n_zxnfa%!_o#8$=&w4ynjl_6#$(%hvz0)!_6f2tg3@=@(zp!'
+SECRET_KEY = 'django-insecure-7lye6feza1n3pt+ybfnzne*rc@w%bjwx@)%sx#7=*_nqt-dede'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+   'snippets.apps.SnippetsConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -124,4 +127,10 @@ MAILERS = {
     'default': {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
+}
+
+
+REST_FRAMEWORK = {
+   'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+   'PAGE_SIZE': 10
 }
