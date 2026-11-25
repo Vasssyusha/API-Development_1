@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://127.0.0.1:8000/snippets/
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"сниппет для удаления\",\r
+
+    \    \"code\": \"print('Hello, Postman!')\",\r
+
+    \    \"linenos\": false,\r
+
+    \    \"language\": \"python\",\r
+
+    \    \"style\": \"friendly\"\r
+
+    }"
+order: 6000

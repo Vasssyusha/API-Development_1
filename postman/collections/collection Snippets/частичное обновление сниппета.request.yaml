@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://127.0.0.1:8000/snippets/1/
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Ещё более обновленный несчастный сниппет\"\r
+
+    }"
+order: 5000
