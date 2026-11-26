@@ -1,0 +1,9 @@
+$kind: collection
+name: new collection
+auth:
+  - id: b3ed894b-9644-42c9-b5e2-04fb643b9811
+    type: basic
+    name: Basic Auth
+    credentials:
+      username: vasyusha
+      password: lizochk@_2008

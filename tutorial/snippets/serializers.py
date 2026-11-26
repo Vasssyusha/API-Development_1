@@ -9,6 +9,7 @@ class SnippetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Snippet
         fields = ['id', 'title', 'code', 'linenos', 'language', 'style', 'owner']
+        highlight = serializers.HyperlinkedIdentityField(view_name='snippet-highlight', format='html')
 
 
 class UserSerializer(serializers.ModelSerializer):

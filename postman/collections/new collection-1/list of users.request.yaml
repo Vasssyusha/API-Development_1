@@ -1,0 +1,4 @@
+$kind: http-request
+url: https://vasssyusha.pythonanywhere.com/
+method: GET
+order: 2000

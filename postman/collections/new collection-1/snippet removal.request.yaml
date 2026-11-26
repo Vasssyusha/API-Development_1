@@ -1,0 +1,4 @@
+$kind: http-request
+url: https://vasssyusha.pythonanywhere.com/snippets/4/
+method: DELETE
+order: 6000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: https://vasssyusha.pythonanywhere.com/snippets/4/
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"code\": \"print('я уже схожу с ума')\"\r
+
+    }"
+order: 5000

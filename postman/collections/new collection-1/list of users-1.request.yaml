@@ -1,0 +1,5 @@
+$kind: http-request
+name: list of users
+url: https://vasssyusha.pythonanywhere.com/users/
+method: GET
+order: 7000
